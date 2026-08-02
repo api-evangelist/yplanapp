@@ -1,7 +1,24 @@
 aid: yplanapp
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/yplanapp.png
 name: yplanapp
-description: yplanapp is a company surfaced as a portfolio company of slow-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: YPlan (operated by Leanworks Limited) was a mobile-first event discovery and last-minute
+  booking app founded in London in 2012 by Rytis Vitkauskas and Viktoras Jucikas. It offered a curated
+  feed of things to do and same-day ticket booking across cities including London, Bristol, Dublin and
+  New York, working with thousands of event partners. The company was acquired by Time Out Group plc in
+  October 2016 and the consumer app was discontinued in 2017. The yplanapp.com domain now 301-redirects
+  to checkout.timeout.com. No public developer program, API, SDK, or documentation surface exists;
+  enrichment probing found no API artifacts, so this remains an identity-only record for a defunct company.
 url: https://raw.githubusercontent.com/api-evangelist/yplanapp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +26,20 @@ x-backed-by:
 - slow-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-acquired-by: time-out-group
+x-notes: Domain 301-redirects to checkout.timeout.com; no public API/developer surface found during enrichment.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Events
+- Event Discovery
+- Ticketing
+- Bookings
+- Mobile
+- Entertainment
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/yplanapp-domain-security.yml
 - type: Website
   url: https://yplanapp.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
