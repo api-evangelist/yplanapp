@@ -29,7 +29,7 @@ x-tier-reason: portfolio-lead
 x-status: defunct
 x-acquired-by: time-out-group
 x-notes: Domain 301-redirects to checkout.timeout.com; no public API/developer surface found during enrichment.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:
