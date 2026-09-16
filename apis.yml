@@ -18,11 +18,13 @@ accessModel:
   public: false
   label: Unknown
   confidence: low
-  source: []
+  source:
+  - url: https://yplanapp.com
+    status: 301
+    note: declared website redirects to https://checkout.timeout.com/ — a different registrable domain
+      (yplanapp.com -> timeout.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)
   generated: '2026-07-22'
   method: derived
-  source:
-  - {url: 'https://yplanapp.com', status: 301, note: 'declared website redirects to https://checkout.timeout.com/ — a different registrable domain (yplanapp.com -> timeout.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/yplanapp.png
 name: yplanapp
 description: YPlan (operated by Leanworks Limited) was a mobile-first event discovery and last-minute
@@ -30,8 +32,8 @@ description: YPlan (operated by Leanworks Limited) was a mobile-first event disc
   feed of things to do and same-day ticket booking across cities including London, Bristol, Dublin and
   New York, working with thousands of event partners. The company was acquired by Time Out Group plc in
   October 2016 and the consumer app was discontinued in 2017. The yplanapp.com domain now 301-redirects
-  to checkout.timeout.com. No public developer program, API, SDK, or documentation surface exists;
-  enrichment probing found no API artifacts, so this remains an identity-only record for a defunct company.
+  to checkout.timeout.com. No public developer program, API, SDK, or documentation surface exists; enrichment
+  probing found no API artifacts, so this remains an identity-only record for a defunct company.
 url: https://raw.githubusercontent.com/api-evangelist/yplanapp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -44,7 +46,7 @@ x-acquired-by: time-out-group
 x-notes: Domain 301-redirects to checkout.timeout.com; no public API/developer surface found during enrichment.
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-09-15'
 tags:
 - Company
 - Event
@@ -53,6 +55,7 @@ tags:
 - Bookings
 - Mobile
 - Entertainment
+- Defunct
 tags_raw:
 - Company
 - Events
